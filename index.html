@@ -1,169 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Live Long Take Loan</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: 'Poppins', sans-serif;
-      background-color: #0d0d0d;
-      color: #ffffff;
-      line-height: 1.6;
-    }
-
-    header {
-      background-color: #1f1f1f;
-      padding: 20px;
-      text-align: center;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-    }
-
-    header h1 {
-      font-size: 2.5em;
-      color: #ff8c00;
-      margin-bottom: 5px;
-    }
-
-    header p {
-      font-size: 1em;
-      color: #aaa;
-    }
-
-    .container {
-      max-width: 1100px;
-      margin: 30px auto;
-      padding: 20px;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 30px;
-      align-items: center;
-    }
-
-    img {
-      width: 100%;
-      border-radius: 12px;
-      transition: transform 0.5s;
-    }
-
-    img:hover {
-      transform: scale(1.03);
-    }
-
-    form {
-      background-color: #1f1f1f;
-      padding: 25px;
-      border-radius: 10px;
-      box-shadow: 0 0 20px rgba(255, 140, 0, 0.3);
-    }
-
-    form h2 {
-      margin-bottom: 20px;
-      font-size: 1.8em;
-      color: #ff8c00;
-    }
-
-    label {
-      display: block;
-      margin: 15px 0 5px;
-      font-weight: 600;
-    }
-
-    input, select, textarea {
-      width: 100%;
-      padding: 10px;
-      border: none;
-      border-radius: 5px;
-      background-color: #333;
-      color: #fff;
-      font-size: 1em;
-    }
-
-    input:focus, select:focus, textarea:focus {
-      outline: 2px solid #ff8c00;
-    }
-
-    button {
-      background-color: #ff8c00;
-      color: white;
-      padding: 12px;
-      border: none;
-      border-radius: 5px;
-      margin-top: 20px;
-      width: 100%;
-      font-size: 1.1em;
-      transition: background 0.3s, transform 0.3s;
-    }
-
-    button:hover {
-      background-color: #e67300;
-      transform: scale(1.05);
-      cursor: pointer;
-    }
-
-    footer {
-      background-color: #111;
-      text-align: center;
-      padding: 20px;
-      color: #aaa;
-      margin-top: 40px;
-    }
-
-    @media(max-width: 768px) {
-      .container {
-        grid-template-columns: 1fr;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
 <body>
-  <header>
-    <h1>Live Long, Take Loan</h1>
-    <p>Your trusted partner for a better tomorrow</p>
-  </header>
+    <H1>Registration form</H1>
+    <form action="action.php">
+        <input type="text" placeholder="user name">
+        <br><br>
+         <input type="password" placeholder="enter you password">
+   
+    <br>
+    <h1>Select you class</h1>
+<br>
 
-  <div class="container">
-    <div>
-      <img src="loan-model.png" alt="Loan Image" />
-    </div>
-
-    <form action="https://formspree.io/f/mqabvvep" method="POST">
-      <h2>Apply for Loan</h2>
-
-      <label for="name">Full Name</label>
-      <input type="text" id="name" name="name" required />
-
-      <label for="email">Email</label>
-      <input type="email" id="email" name="email" required />
-
-      <label for="phone">Phone Number</label>
-      <input type="tel" id="phone" name="phone" required />
-
-      <label for="cnic">CNIC / ID Number</label>
-      <input type="text" id="cnic" name="cnic" required />
-
-      <label for="account">Bank Account Number</label>
-      <input type="text" id="account" name="account" required />
-
-      <label for="loanAmount">Loan Amount Required</label>
-      <input type="text" id="loanAmount" name="loanAmount" required />
-
-      <label for="message">Additional Message (Optional)</label>
-      <textarea id="message" name="message" rows="4"></textarea>
-
-      <button type="submit">Submit Application</button>
-    </form>
-  </div>
-
-  <footer>
-    &copy; 2025 Live Long Loan. All rights reserved.
-  </footer>
+    <label for="1">
+        <input type="radio" value="graduate" id="1" name="class">graduate
+        <label for=""></label>
+        <label for="2">
+        <input type="radio" value="undergraduate"id="2" name="class">undergraduate
+    </label>
+    <br>
+    <h1>select fav subjects</h1>
+    <br>
+    <label for="math">
+        <input type="checkbox" value="math" id="math" name="subject">math
+    </label>
+    <br>
+    <label for="phycics">
+        <input type="checkbox" value="phycics" id="phycics" name="subject">physics
+    </label>
+     <br>
+    <label for="urdu">
+        <input type="checkbox" value="urdu" id="urdu" name="subject">urdu
+    </label> 
+    <br>
+    <label for="computer">
+        <input type="checkbox" value="computer" id="computer" name="subject">computer
+    </label>
+     <br>
+    <label for="sc">
+        <input type="checkbox" value="sc" id="sc" name="sc">physics
+        
+    </label>
+    <br><br>
+    <textarea name="feedback" id="14" placeholder="plz give your feedback" rows="4">
+Feedback        
+    </textarea>
+    <h1>Select you city</h1>
+    <br>
+    <select>
+        <option value="lahore">Lahore</option>
+         <option value="karachi">karachi</option>
+          <option value="islamabad">islamabad</option>
+           <option value="istanbol">istanbol</option>
+            <option value="pakistan">pakistan</option>
+    </select>
+    <br><br>
+    <input type="submit"value=submit>
+     </form>
+     <iframe src="" frameborder="0"></iframe>
+<footer></footer>
 </body>
 </html>
